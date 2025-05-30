@@ -69,24 +69,24 @@ def fight(legend, char_type):
     print(f"HEALTH: {health}")
     print(f"STRENGTH: {strength}\n")
 
-    time.sleep(1)
+    time.sleep(2)
     os.system("clear")
 
     while True:
         print("The battle begins!\n")
-        time.sleep(1)
+        time.sleep(2)
         os.system("clear")
 
         print("Arthur the Magnificent")
         print(f"HEALTH: {health}")
         print(f"STRENGTH: {strength}")
-        time.sleep(1)
+        time.sleep(2)
         os.system("clear")
 
         opponent = input("Who are they battling?\n")
-        if opponent != "Sheila the Almighty":
+        if opponent != "Sheila the Almighty" and opponent != "Arthur the Magnificent":
             print("Invalid opponent.\n")
-            time.sleep(1)
+            time.sleep(2)
             os.system("clear")
             continue
 
@@ -94,7 +94,7 @@ def fight(legend, char_type):
         print("Sheila the Almighty")
         print(f"HEALTH: {sheila_health}")
         print(f"STRENGTH: {sheila_strength}")
-        time.sleep(1)
+        time.sleep(2)
         os.system("clear")
 
         round_num = 1
@@ -114,7 +114,7 @@ def fight(legend, char_type):
             print(f"\nArthur's HEALTH: {max(0, health)}")
             print(f"Sheila's HEALTH: {max(0, sheila_health)}\n")
 
-            time.sleep(1)
+            time.sleep(2)
             os.system("clear")
 
         if health <= 0:
